@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>BlockNova</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- HEADER -->
+        <header class="game-header">
+
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+
+                <div>
+                    <h1>BlockNova</h1>
+                    <span>Place • Blast • Conquer</span>
+                </div>
+            </div>
+
+            <button id="restartBtn" class="restart-btn" type="button">
+                ↻
+            </button>
+
+        </header>
+
+
+        <!-- SCORE AREA -->
+        <section class="score-panel">
+
+            <div class="score-box">
+                <span class="score-label">SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="score-box">
+                <span class="score-label">BEST</span>
+                <strong id="bestScore">0</strong>
+            </div>
+
+            <div class="score-box">
+                <span class="score-label">COMBO</span>
+                <strong id="combo">0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- GAME BOARD -->
+        <section class="board-wrapper">
+
+            <div
+                id="gameBoard"
+                class="game-board"
+                aria-label="BlockNova game board"
+            ></div>
+
+        </section>
+
+
+        <!-- STATUS -->
+        <div id="statusMessage" class="status-message">
+            Choose a block and place it on the board
+        </div>
+
+
+        <!-- PIECES -->
+        <section class="pieces-area">
+
+            <div class="pieces-title">
+                <span>YOUR BLOCKS</span>
+            </div>
+
+            <div id="piecesContainer" class="pieces-container"></div>
+
+        </section>
+
+
+        <!-- GAME OVER -->
+        <div id="gameOver" class="game-over hidden">
+
+            <div class="game-over-card">
+
+                <div class="game-over-icon">✦</div>
+
+                <h2>Game Over</h2>
+
+                <p>Your final score</p>
+
+                <strong id="finalScore">0</strong>
+
+                <button
+                    id="playAgainBtn"
+                    class="play-again-btn"
+                    type="button"
+                >
+                    PLAY AGAIN
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
