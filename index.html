@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aapki Website</title>
+    
+    <!-- Yahan par apna code paste karein -->
+    <meta name="google-site-verification" content="92rAyPFFCiIIPwPW431_dsHlI8AblXNmTvxjUoAxztI" />
+    
+</head>
+<body>
+    
+    <!-- Aapki website ka baaki content yahan niche hota hai -->
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <meta
+        name="theme-color"
+        content="#080b14"
+    >
+
+    <meta
+        name="description"
+        content="BlockNova — a fast and satisfying block placement puzzle game."
+    >
+
+    <title>BlockNova</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main
+        class="game-container"
+        aria-label="BlockNova game"
+    >
+
+
+        <!-- =================================
+             HEADER
+             ================================= -->
+
+        <header class="game-header">
+
+            <div class="brand">
+
+                <div
+                    class="brand-icon"
+                    aria-hidden="true"
+                >
+                    ✦
+                </div>
+
+                <div>
+
+                    <h1>
+                        BlockNova
+                    </h1>
+
+                    <span>
+                        Place • Blast • Conquer
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="restartBtn"
+                class="restart-btn"
+                type="button"
+                aria-label="Restart game"
+                title="Restart game"
+            >
+                ↻
+            </button>
+
+        </header>
+
+
+
+        <!-- =================================
+             SCORE PANEL
+             ================================= -->
+
+        <section
+            class="score-panel"
+            aria-label="Game statistics"
+        >
+
+            <div class="score-box">
+
+                <span class="score-label">
+                    SCORE
+                </span>
+
+                <strong
+                    id="score"
+                    aria-live="polite"
+                >
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="score-box">
+
+                <span class="score-label">
+                    BEST
+                </span>
+
+                <strong
+                    id="bestScore"
+                >
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="score-box">
+
+                <span class="score-label">
+                    COMBO
+                </span>
+
+                <strong
+                    id="combo"
+                    aria-live="polite"
+                >
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             GAME BOARD
+             ================================= -->
+
+        <section
+            class="board-wrapper"
+            aria-label="Game board area"
+        >
+
+            <div
+                id="gameBoard"
+                class="game-board"
+                role="grid"
+                aria-label="BlockNova 8 by 8 game board"
+            ></div>
+
+        </section>
+
+
+
+        <!-- =================================
+             STATUS
+             ================================= -->
+
+        <div
+            id="statusMessage"
+            class="status-message"
+            role="status"
+            aria-live="polite"
+        >
+            Drag a block onto the board
+        </div>
+
+
+
+        <!-- =================================
+             PIECES
+             ================================= -->
+
+        <section
+            class="pieces-area"
+            aria-label="Available blocks"
+        >
+
+            <div class="pieces-title">
+                <span>
+                    YOUR BLOCKS
+                </span>
+            </div>
+
+
+            <div
+                id="piecesContainer"
+                class="pieces-container"
+                aria-label="Three available blocks"
+            ></div>
+
+        </section>
+
+
+
+        <!-- =================================
+             GAME OVER
+             ================================= -->
+
+        <div
+            id="gameOver"
+            class="game-over hidden"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="gameOverTitle"
+        >
+
+            <div class="game-over-card">
+
+                <div
+                    class="game-over-icon"
+                    aria-hidden="true"
+                >
+                    ✦
+                </div>
+
+
+                <h2 id="gameOverTitle">
+                    Game Over
+                </h2>
+
+
+                <p>
+                    Your final score
+                </p>
+
+
+                <strong
+                    id="finalScore"
+                >
+                    0
+                </strong>
+
+
+                <button
+                    id="playAgainBtn"
+                    class="play-again-btn"
+                    type="button"
+                >
+                    PLAY AGAIN
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =================================
+         GAME SCRIPT
+         ================================= -->
+
+    <script
+        src="app.js"
+        defer
+    ></script>
+
+</body>
+
+</html>
